@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { renderUser } from "../controllers/userController";
-imoprt { Router } from "../controllers/userController";
+import { renderBook, renderUser } from "../controllers/userController";
 
 export const router = Router();
 
 router.get("/", renderUser);
+router.post("/", renderBook);
